@@ -9,15 +9,17 @@
 
     <script type="text/javascript">
 
+    function PopUpShow(){
+      $("#popup1").show();
+    }
+    function PopUpHide(){
+      $("#popup1").hide();
+    }
+
       $(document).ready(function(){
         PopUpHide();
       });
-      function PopUpShow(){
-        $("#popup1").show();
-      }
-      function PopUpHide(){
-        $("#popup1").hide();
-      }
+
       </script>
     <style media="screen">
 
@@ -67,7 +69,6 @@
      .creation:hover {
        background-color: #3A68EE;
      }
-
 
     .menu {
       grid-column: 1 / 3;
