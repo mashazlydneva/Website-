@@ -6,7 +6,7 @@
 	<title></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="stylesheets/style.css">
-
+	<link rel="stylesheet" href="stylesheets/responsive5.css">
 	<script type="text/javascript">
 
 		$(document).ready(function(){
@@ -26,6 +26,8 @@
 	src: url("fonts/fugue_headline.woff") format('woff');
 	}
 
+
+
  .m_shop {
 	 color: #3A68EE;
  }
@@ -33,7 +35,7 @@
  .book_price{
 	grid-column: 1 / 13;
  	grid-row: 8;
- 	border: 1px solid black;
+ 	border: 2px solid black;
 	    padding: 0em 5em 0 5em;
 			justify-content: space-between;
 			display: flex;
@@ -44,19 +46,22 @@
 
  .goods1{
 	 grid-column: 1 / 13;
-	 grid-row: 1 / 5;
+	 grid-row: 1 / 7;
 	 display: flex;
 	 justify-content: space-evenly;
+	 overflow: hidden;
  }
 
  .goods2{
 	 display: flex;
    grid-column: 1 / 13;
-	 grid-row: 1 / 5;
+	 grid-row: 1 / 7;
 	 justify-content: space-evenly;
+	 overflow: hidden;
  }
- .goods2 img, .goods1 img{
+ .photos{
  	width: 30em;
+	border: 2px solid black;
  }
  .merch1, .merch2, .merch3, .merch4, .merch5, .merch6 {
 	 display: flex;
@@ -81,12 +86,10 @@
  .merch3_text{
    border: 2px solid black;
  }
- .footer{
+ /* .footer{
  	grid-row: 7;
- }
- /* .wrapper2{
- 	margin-top: 2em;
  } */
+
  .b-popup{
 		width:100vw;
 		min-height:100vh;
@@ -119,7 +122,7 @@
 	</div>
 
 <section class="book">
-	<div class="wrapper2">
+	<div class="wrapper2 shoppage2">
 		<div class="slider">
 			<a class="prev" onclick="minusSlide()">&#10094;</a>
 		  	<div class="item">
@@ -170,10 +173,10 @@
 
 		</div>
 
-		<div class="book_price">
-			<p><a href="javascript:PopUpShow()">печатное издание <br> 20$ </a></p>
+		<a class="book_price" href="https://ru.calameo.com/read/0065977039b8544a03253">
+			<p>печатное издание <br> 20$</p>
 			<img src="images/Group 106.svg" alt="">
-		</div>
+		</a>
 	</div>
 </section>
 
@@ -181,21 +184,22 @@
 	<div class="wrapper4">
 		<div class="goods1">
 				<div class="merch1">
-				<img src="images/проектирование17 2.jpg" alt="">
-						<div class="merch1_text" >
-							<p><a href="javascript:PopUpShow()"> тканевая сумка <br> 15$ </a></p>
+				<img class="photos" src="images/проектирование17 2.jpg" alt="">
+						<a href="index7.html"><div class="merch1_text" >
+							<p>тканевая сумка <br> 15$ </p>
 							<img src="images/Group 106.svg" alt="">
 						</div>
+						</a>
 			  </div>
 				<div class="merch2">
-				<img src="images/проектирование13 1.jpg" alt="">
+				<img class="photos" src="images/проектирование13 1.jpg" alt="">
 				<div class="merch2_text">
 				 <p><a href="javascript:PopUpShow()">	канцелярия <br> от 4$ </a></p>
 					<img src="images/Group 106.svg" alt="">
 				</div>
 			  </div>
 				<div class="merch3">
-				<img src="images/проектирование17 1.jpg" alt="">
+				<img class="photos" src="images/проектирование17 1.jpg" alt="">
 				 <div class="merch3_text">
 				 	<p>футболка <br> 17$</p>
 					<img src="images/Group 106.svg" alt="">
@@ -204,24 +208,24 @@
      </div>
 	</div>
 
-	<div class="wrapper2">
+	<div class="wrapper2 shoppage">
 		<div class="goods2">
 			<div class="merch4">
-			<img src="images/проектирование15 2.jpg" alt="">
+			<img class="photos" src="images/проектирование15 2.jpg" alt="">
 					<div class="merch1_text">
 						<p>жилет <br> 15$ </p>
 						<img src="images/Group 106.svg" alt="">
 					</div>
 			</div>
 			<div class="merch5">
-			<img src="images/проектирование19 1.jpg" alt="">
+			<img class="photos" src="images/проектирование19 1.jpg" alt="">
 			<div class="merch2_text">
 				<p>плакаты А3 <br> 10$</p>
 				<img src="images/Group 106.svg" alt="">
 			</div>
 			</div>
 			<div class="merch6">
-			<img src="images/проектирование15 1.jpg" alt="">
+			<img class="photos" src="images/проектирование15 1.jpg" alt="">
 			 <div class="merch3_text">
 				<p>каска <br> 12$</p>
 				<img src="images/Group 106.svg" alt="">
