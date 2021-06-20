@@ -1,0 +1,53 @@
+@media all and (min-width: 320px) and (max-width: 1023px) {
+
+  .photos {
+    width: 10em;
+  }
+
+  .merch1 img, .merch2 img, .merch3 img, .merch4 img, .merch5 img, .merch6 img {
+    width: 45em;
+  }
+
+  .shoppage2 {
+      grid-template-rows: repeat(18, 7em);
+   }
+   .wrapper4 {
+       grid-template-rows: repeat(18, 7em);
+         margin-top: -70em;
+    }
+
+    .shoppage {
+        grid-template-rows: repeat(9, 7em);
+    }
+
+    .merch3 {
+    padding-right: 52em;
+    }
+    .merch6 {
+    padding-left: 52em;
+    margin-top: -59em;
+    }
+    .merch4 {
+    margin-top: 63em;
+    }
+
+  .goods1 {
+    flex-wrap: wrap;
+  height: 125em;
+
+  }
+
+  .goods2 {
+    flex-wrap: wrap;
+    height: 125em;
+    margin-top: -63.5em;
+  }
+  .footer {
+    grid-row: 19;
+  }
+}
+
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+
+}
