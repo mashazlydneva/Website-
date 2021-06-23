@@ -6,18 +6,6 @@
 	<title></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="stylesheets/style.css">
-	<link rel="stylesheet" href="stylesheets/responsive6.css">
-	<script type="text/javascript">
-		$(document).ready(function(){
-			PopUpHide();
-		});
-		function PopUpShow(){
-			$("#popup1").show();
-		}
-		function PopUpHide(){
-			$("#popup1").hide();
-		}
-	</script>
 
 	<style media="screen">
 	@font-face {
@@ -25,6 +13,10 @@
 	src: url("fonts/fugue_headline.woff") format('woff');
 	}
 
+.for_posters{
+	  /* grid-template-rows: repeat(8, 5em); */
+		  grid-template-rows: repeat(6, 7em);
+}
  .m_events {
 	 color: #3A68EE;
  }
@@ -44,14 +36,6 @@
 	width: 100%;
 
 }
- .book_price{
-	grid-column: 1 / 13;
- 	grid-row: 2;
- 	border: 1px solid black;
-	    padding: 0em 5em 0 5em;
-			justify-content: space-between;
-			display: flex;
- }
 
  .news1{
 	 grid-column: 1 / 13;
@@ -61,26 +45,31 @@
 	 margin-top: 4em;
  }
 
+.news p {
+	font-size: 1em;
+}
  .news2{
 	 display: flex;
    grid-column: 1 / 13;
 	 grid-row: 1 / 5;
 	 justify-content: space-evenly;
-	 margin-top: 1em;
+	 margin-top: 2em;
  }
  .posters{
  	width: 20em;
-	border: 2px solid black;
+	  height: 140%;
+	outline: 2px solid black;
  }
  .poster1, .poster2, .poster3, .poster4, .poster5, .poster6, .poster7, .poster8 {
 	 display: flex;
    flex-direction: column;
  }
  .merch1_text, .merch2_text, .merch3_text {
-   border: 2px solid black;
+   outline: 2px solid black;
 	 justify-content: space-around;
 	 display: flex;
 	 cursor: pointer;
+
  }
  .merch1_text:hover, .merch2_text:hover, .merch3_text:hover, .book_price:hover {
  	background-color: #3A68EE;
@@ -89,35 +78,10 @@
  .merch1_text img, .merch2_text img, .merch3_text img, .book_price img {
    width: 3em;
  }
- .merch2_text{
-   border: 2px solid black;
- }
- .merch3_text{
-   border: 2px solid black;
- }
- /* .footer{
- 	grid-row: 7;
- } */
-
- .b-popup{
-		width:100vw;
-		min-height:100vh;
-		background-color: rgba(0,0,0,0.1);
-		-webki-backdrop-filter: blur(10px);
-		backdrop-filter: blur(10px);
-		transition: all 2s ease;
-		overflow:hidden;
-		position:fixed;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		}
-		.b-popup .b-popup-content {
-		width: 100%;
-		/* background: url('images/Group 86.svg'); */
-		}
 
 	</style>
+	<link rel="stylesheet" href="stylesheets/responsive6.css">
+
 </head>
 
 <body>
@@ -151,78 +115,71 @@
 			<div class="poster1">
 			<img class="posters" src="images/отель копия 2 1.jpg" alt="">
 					<div class="merch1_text">
-						<p><a href="javascript:PopUpShow()"> тканевая сумка <br> 15$ </a></p>
+						<p><a href="javascript:PopUpShow()"> 23.01.21 <br> открытие отеля <br> в Антарктиде </a></p>
 						<img src="images/Group 106.svg" alt="">
 					</div>
 			</div>
 			<div class="poster2">
 			<img class="posters"  src="images/паблик-ток копия 2 1.jpg" alt="">
 			<div class="merch2_text">
-			 <p><a href="javascript:PopUpShow()">	канцелярия <br> от 4$ </a></p>
+			 <p><a href="javascript:PopUpShow()">	23.02.21 <br> паблик-ток на тему <br> глобального потепления </a></p>
 				<img src="images/Group 106.svg" alt="">
 			</div>
 			</div>
 			<div class="poster3">
 			<img  class="posters" src="images/Artboard 1.jpg" alt="">
 			 <div class="merch3_text">
-				<p>футболка <br> 17$</p>
+				<p>23.01.21 <br> субботник <br> по сбору снега</p>
 				<img src="images/Group 106.svg" alt="">
 			 </div>
 			 </div>
 			 <div class="poster4">
  			<img  class="posters" src="images/проектирование копия4.jpg" alt="">
  			 <div class="merch3_text">
- 				<p>футболка <br> 17$</p>
+ 				<p>23.01.21 <br> Экскурсия «путешествие <br> в Мерзлоту»</p>
  				<img src="images/Group 106.svg" alt="">
  			 </div>
  			 </div>
 		</div>
 	</div>
-</section>
 
-<section class="merch">
-
-	<div class="wrapper2">
+	<div class="wrapper2 for_posters">
 		<div class="news2">
 			<div class="poster5">
 			<img  class="posters" src="images/проектирование копия10.jpg" alt="">
 					<div class="merch1_text">
-						<p>жилет <br> 15$ </p>
+						<p>19.01.21 <br> серия лекций <br> «почему ледники тают?» </p>
 						<img src="images/Group 106.svg" alt="">
 					</div>
 			</div>
 			<div class="poster6">
 			<img  class="posters" src="images/new year копия 3 1.jpg" alt="">
 			<div class="merch2_text">
-				<p>плакаты А3 <br> 10$</p>
+				<p>31.12.20 <br> вечеринка в честь <br> нового года в&nbspМерзлоте</p>
 				<img src="images/Group 106.svg" alt="">
 			</div>
 			</div>
 			<div class="poster7">
 			<img  class="posters" src="images/горки 1.jpg" alt="">
 			 <div class="merch3_text">
-				<p>каска <br> 12$</p>
+				<p>15.12.20 <br> открытие парка <br> «ледяные горки»</p>
 				<img src="images/Group 106.svg" alt="">
 			 </div>
 		</div>
 		<div class="poster8">
 		<img  class="posters" src="images/чистый лед 1.jpg" alt="">
 		 <div class="merch3_text">
-			<p>каска <br> 12$</p>
+			<p>25.11.20 <br> открытие <br> магазина льда</p>
 			<img src="images/Group 106.svg" alt="">
 		 </div>
 	</div>
 	</div>
 
-	<div class="footer">
-		<p>Антарктида, ул. Полярная, д. 3 <br> Ежедневно с 10:00 до 20:00</p>
-		<p>tel: + 7 (845) 97 56 34 <br> e-mail: hello@merzlota.com</p>
-	</div>
-	</div>
 </section>
-
-<div class="b-popup" id="popup1">
-		<a href="javascript:PopUpHide()"><img class="b-popup-content" src="images/Group 86.svg" alt=""></a>
+<div class="footer">
+	<p>Антарктида, ул. Полярная, д. 3 <br> Ежедневно с 10:00 до 20:00</p>
+	<p>tel: + 7 (845) 97 56 34 <br> e-mail: hello@merzlota.com</p>
+</div>
 </div>
 
 
